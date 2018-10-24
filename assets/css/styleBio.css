@@ -1,0 +1,115 @@
+
+body {
+    margin: 0;
+    overflow: hidden;
+    background: rgb(26,177,203);
+    background: linear-gradient(45deg, rgba(26,177,203,1) 0%, rgba(22,34,144,0.9806062073266807) 1%, rgba(144,151,145,1) 45%);
+}
+
+.imgbg {
+    position: relative;
+    display:inline-flex;
+    background-position: 50% 50%;
+    background-repeat: repeat;
+    width: 92%;
+    z-index: 0;
+    margin: 0 4% 0 4%;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px black, 0 6px 20px 0 black;
+    }
+h1 {
+    font-size:2.5em;
+    color: #f9f9f9;
+    text-shadow: 2px 2px #000000;
+    display:inline-flex;
+    position: relative;
+    text-align:center;
+    text-decoration: underline;
+    z-index:10;
+    font-family: 'Cinzel', serif;
+    margin-bottom:10px;
+    }
+.text-container {
+    color: #f9f9f9;
+    text-shadow: 2px 2px black;
+    margin: 15px 100px;
+    line-height: 28px;
+    font-size: 1.5em;
+    position: fixed;
+    text-align: center;
+    bottom: 15%;
+}
+p {
+    position:relative;
+    margin-top:5%;
+}
+.button {
+    z-index:10;
+    font-size: 1em;
+    color: white;
+    border-radius:20%;
+    padding: 5px 10px;
+    width: 110px;
+    position:relative;
+    background-color: #42433e;
+    text-decoration: none;	
+}
+.button a:visited { 
+    color: white;
+}
+.button a:hover{
+    color:#df0f4c;
+}
+     /*=============================================================*/
+    .footer small {
+        font-weight: 400;
+    }
+    .footer {
+        position: fixed;
+        color: black;
+        background-color: #666666;
+        font-size: 14px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        padding: 4px 0 4px 0;
+        background: rgb(26,177,203);
+        background: linear-gradient(45deg, rgba(26,177,203,1) 0%, rgba(22,34,144,0.9806062073266807) 1%, rgba(144,151,145,1) 45%);
+        text-align: center;
+    }
+         /*=============================================================*/
+h3 {
+    text-align: center;
+    font-size: 2em;
+}
+.form {
+    background-color: #f9f9f9;
+    display: block;
+    width: 80%;
+}
+.form p {
+    position: relative;
+    display: flex;
+}
+@media screen and (max-width: 660px) {
+    h1 {
+        position: relative;
+       margin-top: 5%;
+    }
+    .button {
+        position: static;
+        width: 80px;
+    }
+    .imgbg {
+        position: static;
+    }
+    .text-container {
+        top: 10%;
+    font-size: 1em;
+    }
+}
+@media screen and (max-width: 420px) {
+    .text-container {
+        font-size: .75em;
+        } 
+}

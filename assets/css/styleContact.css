@@ -1,0 +1,96 @@
+body, html {
+	margin: 0;
+    overflow: hidden;
+    background-color: #666666;
+}
+.container {
+	background: linear-gradient(45deg, rgba(22,34,144,0.9806062073266807) 3%, rgba(26,177,203,1) 29%, rgba(144,151,145,1) 67%);
+}
+h3 {
+    margin: 10px 40px 20px 40px;
+    font-size: 2em;
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+    color: blanchedalmond;
+    font-family: 'Cinzel', serif;
+    text-decoration: underline;
+    margin: 0;
+}
+p{
+    font-family: 'Cinzel', serif;
+}
+.form {
+    position: fixed;
+    top: 20%;
+    right: 40%;
+    max-width: 400px;
+    color: aliceblue;
+}
+.button {
+    z-index:10;
+    font-size: 1em;
+    color: white;
+    border-radius:15%;
+    padding: 5px 7px;
+    width: 110px;
+    position:relative;
+    background-color: #42433e;
+    top:33px;	
+}
+.button a:visited { 
+    color: white;
+}
+/* .button a:hover{
+ color: red;  
+} */
+input[type="submit" i] {
+    border-radius: 15%;
+} 
+.imagebg {
+    display:inline-flex;
+    width:90%;
+    margin-left: 40px;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px black, 0 6px 20px 0 black;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+.footer small {
+    font-weight: 400;
+    }
+    .footer {
+    position: fixed;
+    background-color: #666666;
+    font-size: 14px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 4px 0 4px 0;
+    background: rgb(26,177,203);
+    background: linear-gradient(45deg, rgba(26,177,203,1) 0%, rgba(22,34,144,0.9806062073266807) 1%, rgba(144,151,145,1) 45%);
+    text-align: center;
+    }
+
+    @media screen and (max-width: 640px) {
+        .button {
+            width: 100px;
+            position: relative;
+            top: 0%;
+        }
+        .imagebg {
+            margin: 0;
+            width: 500px;
+            height: 200px;
+        }
+        .form {
+            text-align: center;
+            position: relative;
+            right: 5%;
+            margin:  0;
+            max-width: 150px;
+            color: aliceblue;
+
+        } 
+    }
