@@ -48,18 +48,20 @@ h1 {
 	position:relative;
 	background-color: #545550;
 	text-decoration: none;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
 }
-.button a:link {
+.button a:visited, a:link {
 	color: wheat;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
 }
-.button a:visited {
-	color: wheat;
-}
-/* .button a:active { 
-	color: red;
-	} */
-.button a:hover {
-	color: blue;
+.button:hover {
+	border:2px solid red;
 }
 /*----------------------------Footer--------*/
 .footer small {

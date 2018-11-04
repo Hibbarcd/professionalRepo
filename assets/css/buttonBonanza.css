@@ -1,0 +1,186 @@
+body, html {
+	margin: auto;
+	overflow: scroll;
+	background: linear-gradient(45deg, rgba(22,34,144,0.9806062073266807) 7%, rgba(26,177,203,1) 38%, rgba(144,151,145,1) 95%);
+}
+h1 {
+    font-size: 2em;
+    text-shadow: 2px 2px #000000;
+    text-align: center;
+    color: blanchedalmond;
+    font-family: 'Cinzel', serif;
+    text-decoration: underline;
+    margin: auto;
+	}
+h2 {
+	color: blanchedalmond;
+	font-size: 1.5em;
+	text-align: center;
+	padding-top: 10px;
+	margin: 0;
+	font-family: 'Cinzel', serif;
+    text-decoration: underline;
+}
+.container {
+	background: linear-gradient(45deg, rgba(22,34,144,0.9806062073266807) 3%, rgba(26,177,203,1) 29%, rgba(144,151,145,1) 67%);
+}
+	
+.imagebg {
+	display:inline-flex; 
+	width:90%;
+	margin-left: 40px;
+	border: 2px solid black;
+	box-shadow: 0 4px 8px black, 0 6px 20px 0 black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.imagebg {
+	display:inline-flex; 
+	width:90%;
+	margin-left: 40px;
+	border: 2px solid black;
+	box-shadow: 0 4px 8px black, 0 6px 20px 0 black;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+/*==========center buttons==========*/
+.images-box {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.table1, .table2 {
+	margin-top: 20px;
+}
+.table2 {
+	padding-left: 10px;
+}
+.table2 tr {
+	padding-bottom: 20px;
+}
+ .button {
+	width: 130px;
+	height: 50px;
+	font-family: 'Cinzel', serif;
+	font-size: 1em;
+	color: white;
+	border-radius:20px;
+	padding: 4px 8px;
+	position:relative;
+	background-color: #545550;
+	text-decoration: none;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+} 
+.button a:visited, a:link {
+	color: wheat;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+.button:hover {
+	border:2px solid red;
+} 
+/*===============animated button section=====================*/
+.animate-button {
+    width: 120px;
+    height: 40px;
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+    border-radius:20px;
+    padding: 4px 8px;
+    position:relative;
+    background-color: #545550;
+    text-decoration: none;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.animate-button a:visited, a:link {
+	color: wheat;
+	-webkit-transition: all 0.75s ease 0s;
+	-moz-transition: all 0.75s ease 0s;
+	-o-transition: all 0.75s ease 0s;
+	transition: all 0.75s ease 0s;
+}
+.animate-button:hover {
+    border:2px solid rgb(5, 236, 5);
+}
+#btn2 {
+	opacity: 50%;
+	border-radius: 50px;
+	-webkit-transition: all .75s ease-in-out;
+	transition: all .75s ease-in-out;
+	color: #00d7c3;
+  }
+  #btn2:hover {
+	box-shadow: 0 0 10px 0 #00d7c3 inset, 0 0 20px 2px #00d7c3;
+	border: 3px solid #33ff00;
+  }
+  #btn3 {
+	opacity: 50%;
+	border: 1px solid #67ff02;
+
+	transition: .3s;
+  }
+  #btn3:hover {
+	animation: pulse 1s infinite;
+
+	transition: .3s;
+  }
+  @keyframes pulse {
+	0% {
+	  transform: scale(1);
+	}
+	70% {
+	  transform: scale(.9);
+	}
+	  100% {
+		  border: 3px solid rgb(220, 20, 20);
+	  transform: scale(1);
+	}
+  }
+  /*-------------------------------------*/
+  #btn4{
+	transition: all .5s;
+  }
+  #btn4:after{
+	top: 0;
+	z-index: -1;
+	transform: translate3D(-101%,0,0);
+  }
+  
+  #btn4:hover:after{
+	transform: translate3D(0,0,0);
+	transition: all .5s;
+  }
+  
+/*----------------------------Footer--------*/
+.footer small {
+    font-weight: 400;
+}
+.footer {
+    position: fixed;
+    color: #cac8a0;
+    background-color: #666666;
+    font-size: 14px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    padding: 4px 0 4px 0;
+	background: rgb(26,177,203);
+	background: linear-gradient(45deg, rgba(26,177,203,1) 0%, rgba(22,34,144,0.9806062073266807) 1%, rgba(144,151,145,1) 45%);
+    text-align: center;
+}
+
