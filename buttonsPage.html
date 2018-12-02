@@ -54,6 +54,18 @@
                                         </div>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <div class="image7">
+                                            <button class="button"><a href="https://peaceful-forest-26731.herokuapp.com/">Scrape Demo</a></button>
+                                        </div>
+                                    </td>
+                                    <td>    
+                                        <div class="image8">
+                                            <button class="button"><a href="#">###</a></button>
+                                        </div>
+                                    </td>
+                                </tr>
                             </table>
                             <h2>Fun Buttons</h2>
                             <table class="table2">
@@ -80,12 +92,30 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                            <button class="animate-button" id="btn5"><a href="#">LoadBar</a></button>
+                                        <div id="myProgress">
+                                            <button  class="loadbar" id="myBar" onclick="move()">ClickMe</button> 
+
+                                            <script>function move() {
+                                                    var elem = document.getElementById("myBar"); 
+                                                    var width = 10;
+                                                    var id = setInterval(frame, 10);
+                                                    function frame() {
+                                                        if (width >= 100) {
+                                                            clearInterval(id);
+                                                        } else {
+                                                            width++; 
+                                                            elem.style.width = width + '%'; 
+                                                            elem.innerHTML = width * 1 + '%';
+                                                        }
+                                                    }
+                                                }</script>
+                                        </div>
                                     </td>
                                     <td>    
-                                            <div class="loader">
-                                                    <button class="animate-button" id="btn6">Spinner</button>
-                                            </div> 
+                                        <div class="loader">
+                                            <button class="animate-button" id="btn6">Spin Load</button>
+
+                                        </div> 
                                     </td>
                                 </tr>
                             </table>       
@@ -96,3 +126,4 @@
      </footer>
 </body>
 </html>
+
