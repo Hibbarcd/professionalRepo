@@ -8,9 +8,8 @@ $(document).ready(function() {
 
     function printGrid(grid) {
         for (i = 0; i < grid.length; i++) {
-            //console.log(grid[i].join(" "));
-            //this line is messed up 
-            //document.getElementById('result').innerHTML += spiral;
+            console.log(grid[i].join(" "));
+            document.getElementById('rows').innerHTML = grid[i].join(" ");
             }
         }
 
